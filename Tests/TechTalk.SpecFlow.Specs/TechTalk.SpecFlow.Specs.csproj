@@ -271,10 +271,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy $(SolutionDir)Installer\SpecFlowBinPackage\bin\package\*.* $(TargetDir)SpecFlow\ /s /y
-xcopy $(SolutionDir)packages\NUnit.2.6.0.12054\*.* $(TargetDir)NUnit\ /s /y
-xcopy $(SolutionDir)packages\NUnit.Runners.2.6.0.12051\*.* $(TargetDir)NUnit.Runners\ /s /y
-xcopy "$(SolutionDir)lib\Microsoft F#\*.*" $(TargetDir)FSharp\ /s /y
+    <PostBuildEvent>xcopy "$(SolutionDir)Installer\SpecFlowBinPackage\bin\package\*.*" "$(TargetDir)SpecFlow\" /s /y
+xcopy "$(SolutionDir)packages\NUnit.2.6.0.12054\*.*" "$(TargetDir)NUnit\" /s /y
+xcopy "$(SolutionDir)packages\NUnit.Runners.2.6.0.12051\*.*" "$(TargetDir)NUnit.Runners\" /s /y
+xcopy "$(SolutionDir)lib\Microsoft F#\*.*" "$(TargetDir)FSharp\" /s /y
 </PostBuildEvent>
   </PropertyGroup>
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
